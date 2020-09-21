@@ -5,7 +5,7 @@ public class Dictionary {
     public int getCount() {
         return getCount;
     }
-
+//getWord
     public String getWordExplain(int n) {
         return word[n].getWordExplain();
     }
@@ -13,7 +13,7 @@ public class Dictionary {
     public String getWordTarget(int n) {
         return word[n].getWordTarget();
     }
-
+//
     public void addWord(Word newWords) {
         word[count] = new Word(newWords);
         count++;
