@@ -2,7 +2,7 @@ public class Word {
     public String word_target = "";
     public String word_explain = "";
 
-
+//getting value
     public Word(Word newWord) {
         this.word_target = newWord.getWordTarget();
         this.word_explain = newWord.getWordExplain();
