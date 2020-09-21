@@ -3,12 +3,9 @@ import java.util.Scanner;
 
 public class DictionaryManagement {
     public Dictionary dsnr = new Dictionary();
-
-
     public void setDictionary(Dictionary dsnr) {
         this.dsnr = dsnr;
     }
-
     public void insertFromCommandline() {
         Scanner scanner = new Scanner(System.in);
         int countWord;
