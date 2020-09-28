@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Dictionary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        body {
+            background-image: url(https://img2.thuthuatphanmem.vn/uploads/2018/12/30/background-hoa-la-dep_110637914.jpeg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="translate">
+        <h4 id="language">Choose language of dictionary</h4>
+        <div id="google_translate_element"></div>
+
+    </div>
+
+
+    <section>
+        <form class="searchForm">
+            <div id="dictionary">Dictionary</div>
+
+            <input type="search" name="searchBox" id="searchBox" placeholder="Word to search">
+            <input type="button" name="submit" value="Search" onclick="wordSearch()">
+        </form>
+
+        <div class="searchResult" id="searchResult">
+            <div>
+                <h1>Word</h1>
+                <p id="word"></p>
+            </div>
+            <div>
+                <h1>Pronunciation</h1>
+                <p id="pronunciation"></p>
+            </div>
+            <div>
+                <h1>Definition</h1>
+                <p id="definition"></p>
+            </div>
+            <div>
+                <h1>Example</h1>
+                <p id="example"></p>
+            </div>
+            <div>
+                <h1>How To Spell?</h1>
+                <p id="spell"></p>
+            </div>
+            <div>
+                <audio id="AUDIO"></audio>
+            </div>
+        </div>
+    </section>
+    <div id="translate_select"></div>
+
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>
