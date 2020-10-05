@@ -25,19 +25,6 @@ function wordSearch() {
     }
     request1.send();
 
-    //Get Pronunciation
-    var request0 = new XMLHttpRequest();
-    request0.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/pronunciations?useCanonical=false&limit=50&api_key=ds9blt97njwvdd6x4bfxqvr0iebjmg5lucs0fn26in52dsghh', true);
-    request0.onload = function () {
-        var data0 = JSON.parse(this.response);
-        if (request0.status >= 200 && request0 < 400) {
-            pronunciation.innerHTML = data0.text;
-        } else {
-            pronunciation.innerHTML = "Error";
-        }
-    }
-    request0.send();
-
 
     //Get Example
     var request2 = new XMLHttpRequest();
