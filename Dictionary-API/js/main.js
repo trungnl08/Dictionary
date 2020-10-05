@@ -11,7 +11,7 @@ function wordSearch() {
 
     //Get definiton
     var request1 = new XMLHttpRequest();
-    request1.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/definitions?limit=10&includeRelated=false&sourceDictionaries=all&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5', true);
+    request1.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/definitions?limit=10&includeRelated=false&sourceDictionaries=all&useCanonical=false&includeTags=false&api_key=ds9blt97njwvdd6x4bfxqvr0iebjmg5lucs0fn26in52dsghh', true);
     request1.onload = function () {
         var data = JSON.parse(this.response);
         if (request1.status >= 200 && request1.status < 400) {
@@ -27,7 +27,7 @@ function wordSearch() {
 
     //Get Pronunciation
     var request0 = new XMLHttpRequest();
-    request0.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/pronunciations?useCanonical=false&limit=50&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5', true);
+    request0.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/pronunciations?useCanonical=false&limit=50&api_key=ds9blt97njwvdd6x4bfxqvr0iebjmg5lucs0fn26in52dsghh', true);
     request0.onload = function () {
         var data0 = JSON.parse(this.response);
         if (request0.status >= 200 && request0 < 400) {
@@ -41,7 +41,7 @@ function wordSearch() {
 
     //Get Example
     var request2 = new XMLHttpRequest();
-    request2.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/topExample?useCanonical=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5', true);
+    request2.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/topExample?useCanonical=false&api_key=ds9blt97njwvdd6x4bfxqvr0iebjmg5lucs0fn26in52dsghh', true);
     request2.onload = function () {
         var data2 = JSON.parse(this.response);
         if (request2.status >= 200 && request2.status < 400) {
@@ -55,7 +55,7 @@ function wordSearch() {
 
     //Get Spell
     var request3 = new XMLHttpRequest();
-    request3.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/audio?useCanonical=false&limit=50&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5', true);
+    request3.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/audio?useCanonical=false&limit=50&api_key=ds9blt97njwvdd6x4bfxqvr0iebjmg5lucs0fn26in52dsghh', true);
     request3.onload = function () {
         var data3 = JSON.parse(this.response);
         if (request3.status >= 200 && request3.status < 400) {
