@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Dictionary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+ 
+</head>
+
+<body>
+    <div id="translate">
+        <div class="high">
+            <h4 id="language">Choose language of dictionary</h4>
+            <a href="/index1.html" id="linked">Make your Dictionary</a>
+        </div>
+       
+        <div id="google_translate_element"></div>
+
+    </div>
+
+
+    <section>
+        <form class="searchForm">
+            <div id="dictionary">Dictionary Online</div>
+            <input type="search" name="searchBox" id="searchBox" placeholder="Word to search">
+            <i class="fas fa-search" onclick="wordSearch()" id="searchIcon"></i>
+        </form>
+
+        <div class="searchResult" id="searchResult"
+            style="background-color: beige; height: auto; padding: 15px; border-radius: 10%; border-style: solid; border-width: 2px;">
+            <div>
+                <h1>Word</h1>
+                <p id="word"></p>
+            </div>
+            <div>
+                <h1>Definition</h1>
+                <p id="definition"></p>
+            </div>
+            <div>
+                <h1>Example</h1>
+                <p id="example"></p>
+            </div>
+            <div>
+                <h1>How To Spell?</h1>
+                <p id="spell"></p>
+            </div>
+            <div>
+                <audio id="AUDIO"></audio>
+            </div>
+        </div>
+    </section>
+    <div id="translate_select"></div>
+
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>

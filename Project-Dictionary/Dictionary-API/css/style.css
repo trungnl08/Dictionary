@@ -1,0 +1,126 @@
+:root {
+    --box-shadow-color: #9c9c9c;
+}
+
+.high{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: 'Chilanka', cursive;
+}
+#language{
+    background: linear-gradient(#6190E8,#A7BFE8);
+    width: 270px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#linked {
+    color: black;
+    font-size: 27px;
+}
+#linked:hover{
+    color: #ef32d9;
+    transition: 0.3s;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .searchForm h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 0px 0px;
+    margin: 10px 0px 15px 0px;
+    font-weight: 500;
+}
+
+section .searchForm input[type=search] {
+    min-width: 400px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+    background-color: #ece7e7;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 22px;
+    box-shadow: 2px 2px 8px var(--box-shadow-color);
+    transition: box-shadow 0.5s;
+}
+#dictionary{
+    text-align: center;
+    font-size: 35px;
+}
+
+#searchIcon{
+    font-size: 27px;
+    color: #8C9197;
+    cursor: pointer;
+}
+#searchIcon:hover{
+    color: #3D7AFC;
+    transition: 0.3s;
+}
+
+
+section .searchResult {
+    visibility: hidden;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 10px 300px;
+}
+
+section .searchResult div h1 {
+    font-size: 35px;
+}
+
+section .searchResult div p {
+    font-size: 28px;
+}
+
+
+
+#translate {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+
+
+
+
+
+.translated-ltr {
+    margin-top: -40px;
+}
+
+.translated-ltr {
+    margin-top: -40px;
+}
+
+.goog-te-banner-frame {
+    display: none;
+    margin-top: -20px;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
