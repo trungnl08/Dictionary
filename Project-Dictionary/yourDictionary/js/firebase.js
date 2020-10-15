@@ -10,9 +10,9 @@ let $type = document.getElementById("type");
 
 //Add
 function addWord() {
-  let a = prompt("Nhap tieng anh : ").toLowerCase();
-  let b = prompt("Nhap tieng viet : ").toLowerCase();
-  let c = prompt("Tu loai :");
+  let a = prompt("Fill english word : ").toLowerCase();
+  let b = prompt("Fill vietnamses word : ").toLowerCase();
+  let c = prompt("Fill type of word( V, N, Adj, ...) :");
   if(a == null || b== null || c==null){
     alert("Moi ban nhap lai !");
   } else{
@@ -70,7 +70,7 @@ async function searchWord() {
     }
   }
   if(count != 3){
-    alert("Tu khong ton tai !")
+    alert("Word is not found !")
   }
 }
 
@@ -82,7 +82,7 @@ async function deleteWord() {
     data.id = doc.id;
     return data;
   });
-  let $delete = prompt("Nhap tu muon xoa :");
+  let $delete = prompt("Fill english word want to delete:");
   let index = 0, count =0;
   for (let i = 0; i < result.docs.length; i++) {
     if (z[i].anh == $delete) {
@@ -92,10 +92,10 @@ async function deleteWord() {
     }
   }
   if(count!= 3){
-    window.alert("Tu khong ton tai !");
+    window.alert("Word is not found !");
   }
   db.collection("Dictionary").doc(index).delete();
-  window.alert("xoa thanh cong");
+  window.alert("Delete successfully !");
 }
 
 //Xoa toan bo
@@ -104,13 +104,13 @@ async function deleteAll() {
   for (let doc of result.docs) {
     let del = db.collection("Dictionary").doc(doc.id).delete();
   }
-  window.alert("Xoa thanh cong");
+  window.alert("Delete successfully !");
 }
 
 //Update
 async function updateWord() {
   let index = 0, count = 0;
-  let $update = prompt("Nhap tu tieng anh can sua :");
+  let $update = prompt("Fill english word to edit :");
   let result = await db.collection("Dictionary").get();
   let z = result.docs.map(function (doc) {
     let data = doc.data();
@@ -125,9 +125,9 @@ async function updateWord() {
     }
   }
   if(count == 3){
-    let a = prompt("Nhap tu tieng anh moi :");
-    let b = prompt("Nhap tu tieng viet moi :");
-    let c = prompt("Nhap tu loai :");
+    let a = prompt("Fill new english word :");
+    let b = prompt("Fill new vietnamses word :");
+    let c = prompt("Fill new type :");
     db.collection("Dictionary").doc(index).update({
       anh : a,
       viet : b,
@@ -135,7 +135,7 @@ async function updateWord() {
     });
   }
   else  {
-    alert("Tu khong ton tai !");
+    alert("Word is not found !");
 
   }
   
