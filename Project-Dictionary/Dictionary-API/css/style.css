@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    padding: 15px;
+    /* font-family: 'Chilanka', cursive; */
+    font-family: 'Varela Round', sans-serif;
+
+    background-image: url(../3294878.jpg);
+    background-size: cover;
+    cursor: url('../3294878.jpg'),auto;
+}
+#language{
+    background: linear-gradient(#6190E8,#A7BFE8);
+    width: 270px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+form {
+    text-align: center;
+}
+
+#linked {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.high{
+    background-color: #ececec;
+    width: 280px;
+    padding: 1px;
+    height: 10x;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.high:hover {
+    background-color: #01a4ff;
+    color: #628DB1;
+}
+#searchBox {
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border-style: double;
+}
+#dictionary{
+    text-align: center;
+    font-size: 40px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    padding: 6px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#searchIcon{
+    font-size: 27px;
+    color: #8C9197;
+    cursor: pointer;
+}
+#searchIcon:hover{
+    color: #3D7AFC;
+    transition: 0.3s;
+}
+
+
+section .searchResult {
+    visibility: hidden;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 10px 300px;
+    background: linear-gradient(#abbaab, #ffffff);
+}
+
+section .searchResult div h1 {
+    font-size: 28px;
+}
+
+section .searchResult div p {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+.translated-ltr {
+    margin-top: -40px;
+}
+
+.translated-ltr {
+    margin-top: -40px;
+}
+
+.goog-te-banner-frame {
+    display: none;
+    margin-top: -20px;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+/* ------------------------Style for cursor------------------------ */

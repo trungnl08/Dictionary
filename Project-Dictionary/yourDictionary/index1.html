@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+    <div class="title">
+        <p class="text">
+            <span class="text__first">
+                <span class="text__word"> Dictionary</span>
+                <span class="text__first-bg"></span>
+            </span>
+            </span>
+            <br>
+            <span class="text__second">
+                <span class="text__word">Eng-Vie</span>
+                <span class="text__second-bg"></span>
+            </span>
+            </span>
+
+        </p>
+    </div>
+
+
+    <div class="header">
+        <h1>Dictionary</h1>
+    </div>
+    <div class="wrapper">
+        <div class="words">
+            <div id="searchForm">
+                <input type="text" id="search" placeholder="Search...">
+                <button id="searchButton" onclick="searchWord()"> Search </button>
+            </div>
+
+            <hr>
+            <div id="list">
+                <ul id="word_list"></ul>
+            </div>
+        </div>
+
+        <div class="word">
+            <h3>Word</h2>
+                <p id="engWord"><br></p>
+                <hr>
+
+                <h3>Definiton</h2>
+                    <p id="vieWord"><br> </p>
+                    <hr>
+
+
+                    <h3>Type</h2>
+                        <p id="type"></p>
+        </div>
+
+
+        <div class="manage">
+            <a href="../Dictionary-API/index.html" style="color: black;">
+                <i class="fas fa-search" id="tooltip">
+                    <span id="tooltiptext"> Click to use dictionary online !</span>
+                </i>
+            </a>
+            <i class="far fa-plus-square" onclick="addWord()" id="tooltip">
+                <span id="tooltiptext">Click to add word !</span></i>
+            <i class="fas fa-edit" onclick="updateWord()" id="tooltip">
+                <span id="tooltiptext">Click to edit word !</span></i>
+            <i class="fas fa-trash-alt" onclick="deleteWord()" id="tooltip">
+                <span id="tooltiptext">Click to delete word !</span></i>
+            <i class="fas fa-minus-circle" onclick="deleteAll()" id="tooltips">
+                <span id="tooltiptexts">Danger : Click will delete all words in your dictionary !</span></i>
+            </i>
+        </div>
+    </div>
+
+    <!-- <script src="./js/main.js"></script> -->
+</body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCtDmcmwFXqnUfBt_sUVWZL20m1BOKu9fE",
+        authDomain: "ci50-2cc38.firebaseapp.com",
+        databaseURL: "https://ci50-2cc38.firebaseio.com",
+        projectId: "ci50-2cc38",
+        storageBucket: "ci50-2cc38.appspot.com",
+        messagingSenderId: "1051627627386",
+        appId: "1:1051627627386:web:c1e114d23cd0ad1e2facc3"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="./js/firebase.js"></script>
+<script src="./js/title.js"></script>
+
+</html>
